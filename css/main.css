@@ -1,0 +1,128 @@
+/* start global rules  */
+:root {
+    --scrollBarBg: #007FFF;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* the handle style */
+::-webkit-scrollbar-track {
+    background-color: #eee;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--scrollBarBg);
+    border-radius: 15px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    text-transform: capitalize;
+}
+
+/* end global rules  */
+/* start page sections */
+#home {
+    padding: 20px;
+    background-color: #f6f6f6;
+    height: 100vh;
+}
+
+#home .container-fluid .row {
+    width: 100%;
+    display: block;
+}
+
+#home .container-fluid .row .content {
+    max-width: 400px;
+    margin: auto;
+    padding: 30px 0;
+}
+
+#home .container-fluid .row .content .show-data {
+    text-align: center;
+}
+
+#home .container-fluid .row .content #loading-btn {
+    display: none;
+}
+
+#home .container-fluid .row .content .show-data p {
+    font-weight: 600;
+    font-size: 18px;
+    color: #333;
+}
+
+#home .container-fluid .row .table-responsive {
+    overflow: auto;
+    height: calc(100vh - 300px);
+}
+#home .container-fluid .row .table-responsive .table thead {
+    background-color: #f6f6f6;
+}
+
+
+#home .container-fluid .row .table-responsive .table thead th {
+    background-color: #f6f6f6;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+#home .container-fluid .row .table-responsive .table thead tr th:nth-of-type(8)  {
+    min-width: 140px;
+}
+
+#home .container-fluid .row .table-responsive .table tbody tr th:first-of-type{
+    width: auto;
+    min-width: 35px;
+}
+#home .container-fluid .row .table-responsive .table tbody tr td a i {
+    font-weight: bold;
+    color: #007FFF;
+    font-size: 20px;
+    transition: all 0.3s;
+}
+
+#home .container-fluid .row .table-responsive .table tbody tr td a i:hover {
+    cursor: pointer;
+    color: crimson;
+}
+
+#home .container-fluid .row .table-responsive {
+    display: none;
+}
+/* end page sections */
+
+/* start media queres  */
+
+/* start small screen */
+@media screen and (max-width:576px) {}
+
+/* end small screen */
+/* start medium screen */
+@media screen and (min-width:577px) and (max-width:768px) {}
+
+/* end medium screen */
+/* start large screen */
+@media screen and (min-width:769px) and (max-width:992px) {}
+
+/* end large screen */
+/* start extra large screen */
+@media screen and (min-width:993px) and (max-width:1200px) {}
+
+/* end axtra large screen */
+/* start extra extra large screen */
+@media screen and (min-width:1201px) and (max-width:1400px) {}
+
+/* end extra extra large screen */
+
+/* end media queres*/
